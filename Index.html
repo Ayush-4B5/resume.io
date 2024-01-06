@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Ayush Anand's Portfolio</title>
+    <link rel="stylesheet" href="css.css">
+    <script src="https://kit.fontawesome.com/692f7f48d7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="parallax-section">
+    <div class="parallax-bg"></div>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>    
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                 <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Student</p>
+                <h1>Hi, I'm <span>Ayush</span><br>Anand from <span style="color: orange;">In</span>d<span style="color: green;">ia</span></h1>
+            </div>
+        </div>
+    </div>
+</div>
+    <div id="about" class="parallax-content">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Ayush.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Motivated and detail-oriented first-year B.Tech Computer Science Engineering student with a
+                        passion for programming and a strong foundation in Java, Python, Frontend development, and
+                        Node.js with Angular. Eager to apply theoretical knowledge and develop practical skills through
+                        internships and projects.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Java Programming</span><br>Introduction to Java Programming<li>
+                            <li><span>Web Devlopment</span><br>Web Development with Node.js and Angular<li>
+                            <li><span>Python Scripting</span><br>Coding with Python and Data analysis with Python<li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024 - current</span><br>Internship at IDBI Bank<li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023 - current</span><br>Computer Science Engineering at RV University<li>
+                            <li><span>2021 - 2023</span><br>12th CBSE from Sri Chaitanya School<li>
+                            <li><span>2008 - 2021</span><br>ICSE Education till 10th from <span style="color: red;">V</span><span style="color: orange;">I</span><span style="color: yellow;">B</span><span style="color: green;">G</span><span style="color: blue;">Y</span><span style="color: indigo;">O</span><span style="color: violet;">R</span> High School<li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- --------------------My Services---------------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Passionate web designer ready to bring your project to life! 
+                Elevate your online presence with visually stunning and functional websites. 
+                Let's collaborate for success!</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-python"></i>
+                <h2>Analysis of Data Trends with Python</h2>
+                <p>Using machine learning models to make predictions based on historical data.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-java"></i>
+                <h2>GUI Programming with Java</h2>
+                <p>Graphical user interface (GUI) programming with JavaFX or Swing. 
+                Creating simple applications with buttons, text fields, and other GUI components.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- --------------------Porfolio--------------------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/output.png">
+                <div class="layer">
+                    <h3>Analysis of Data Trends with Python</h3>
+                    <p>Check Out my recent work on Terror trends from 1970 to 2021.
+                    <br>Github link below.</p>
+                    <a href="https://github.com/Ayush-4B5/DAP"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>GUI using Java</h3>
+                    <p>Interactive GUI for IoT Machine.
+                    <br>Github link below.</p>
+                    <a href="https://github.com/Ayush-4B5/DAP"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Online Shopping clone of Amazon</h3>
+                    <p>Showing my precise coding skills with this exact Amazon clone.
+                    <br>Github link below.</p>
+                    <a href="https://github.com/Ayush-4B5/Amazon-clone"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+<!-- ------------------Contact------------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p> <i class="fas fa-paper-plane"></i>ayush12anand05@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i>8105061205</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/aayush.anand.7399/"><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com/ayu.x.xx/?next=%2F"><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="images/Ayush Resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="text" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright &copy; Ayush</p>
+    </div>
+</div>
+
+    <script src="java.js"></script>
+</body>
+</html>
